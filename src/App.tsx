@@ -59,7 +59,6 @@ function App() {
     }
   }
   const sendTransaction = async () => {
-    console.log('sendTransaction');
     if (window.ethereum.isMetaMask) {
       const web3Instance = new Web3(window.ethereum);
       try {
@@ -69,7 +68,6 @@ function App() {
             setError('Recipient wallet is required');
             return;
           }
-          console.log('logging transaction');
           setIsTransactionLoading(true);
           const tx: Transaction = {
             from: accounts[0].toString(),
@@ -89,7 +87,7 @@ function App() {
           setTransactions([...transactions, tx]);
         }
       } catch (error) {
-        console.log('caught error, ', error);
+        console.error('caught error, ', error);
         setIsTransactionLoading(false);
         setError(error.message);
       }
