@@ -1,5 +1,72 @@
 .App {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+  flex-direction: column;
+}
+
+.WalletStatus {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 8px;
+  margin: 8px;
+  padding: 8px;
+}
+
+.WalletInfo {
+  display: flex;
+  flex-direction: row
+}
+
+.WalletAddress {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin: 8px;
+  padding: 8px;
+}
+
+.WalletBalance {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin: 8px;
+  padding: 8px;
+}
+
+.TransactionList {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 8px;
+  margin: 8px;
+  padding: 8px;
+}
+.Error {
+  color: red;
+}
+
+.SendMoney {
+  display: flex;
+  flex-direction: column;
+  margin: 8px;
+  padding: 8px;
+}
+
+.InputRow {
+  display: flex;
+  flex-direction: row;
+  margin: 8px;
+  padding: 8px;
+}
+
+.InputRowElement {
+  display: flex;
+  margin: 8px;
+  padding: 8px;
 }
 
 .App-logo {
