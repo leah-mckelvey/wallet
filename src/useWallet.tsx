@@ -75,6 +75,7 @@ export default function useWallet() {
   }
   return {
     accounts,
+    connectionLoading,
     balance,
     error,
     recipientWallet,
